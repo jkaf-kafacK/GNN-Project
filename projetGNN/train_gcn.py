@@ -35,7 +35,7 @@ criterion = torch.nn.CrossEntropyLoss()
 EPOCH = 15
 list_dir = os.listdir("./")
 
-PATH = "/home/onajib/event-gnn/examples/scripts/checkpoints/model_gat.pt"
+PATH = ".../event-gnn/examples/scripts/checkpoints/model_gat.pt"
 LOSS = 0.4
 start_epoch = 0
 
