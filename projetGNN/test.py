@@ -56,13 +56,13 @@ def get_args():
     parser.add_argument("--model-config",
                         type=str,
                         dest='mdl_cfg',
-                        default="/home/onajib/event-gnn/model_conf/event_baseline_config.json",
+                        default=".../event-gnn/model_conf/event_baseline_config.json",
                         help="Path to the json file which contains all training parameters.")
 
     parser.add_argument("--generic-config",
                         type=str,
                         dest='generic_config',
-                        default="/home/onajib/event-gnn/config.ini",
+                        default=".../event-gnn/config.ini",
                         help="Path to the file which contains generic information "
                             "(paths to datasets, standard splitting, ...)")
 
