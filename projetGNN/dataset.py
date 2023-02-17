@@ -7,7 +7,7 @@ import copy
 
 import sys
     # caution: path[0] is reserved for script path (or '' in REPL)
-sys.path.insert(1, '/home/onajib/event-gnn/examples/scripts/rendu_projet/utils')
+sys.path.insert(1, '.../examples/scripts/rendu_projet/utils')
 
 from utils_dataset import * 
 from utils import *
@@ -140,9 +140,9 @@ class CustomDataset(Dataset):
         G = to_networkx(data, to_undirected=True)
         return G
 
-newDataset_train = CustomDataset(root="/onajib/event-gnn/src", dataset=train_dataset, transform=True, pre_transform=None, pre_filter=None)
-interDataset_train = CustomDataset(root="/onajib/event-gnn/src", dataset=data_train_dataset, transform=True, pre_transform=None, pre_filter=None)
-interDataset_test = CustomDataset(root="/onajib/event-gnn/src", dataset=data_test_dataset, transform=True, pre_transform=None, pre_filter=None) 
+newDataset_train = CustomDataset(root=".../event-gnn/src", dataset=train_dataset, transform=True, pre_transform=None, pre_filter=None)
+interDataset_train = CustomDataset(root=".../event-gnn/src", dataset=data_train_dataset, transform=True, pre_transform=None, pre_filter=None)
+interDataset_test = CustomDataset(root=".../event-gnn/src", dataset=data_test_dataset, transform=True, pre_transform=None, pre_filter=None) 
 
 data_0 = newDataset_train[0]
 # data_1 = newDataset_train[1]
